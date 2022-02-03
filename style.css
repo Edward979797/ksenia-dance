@@ -3,6 +3,7 @@ html,body {
     height: 100%;
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 body {
@@ -19,10 +20,22 @@ body {
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
     flex: auto;
     background-color: #912222;
-    padding: 50px;
-    height: 50em;
+    padding: 0px;
+}
+
+.content-row-1,
+.content-row-2,
+.content-row-3,
+.content-row-4,
+.content-row-5 {
+    display: flex;
+    border: 2px solid blue;
+    padding: 20px;
+    height: 20%;
 }
 
 .footer {
@@ -47,48 +60,3 @@ body {
     color: darkred;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-}
-
-.banner {
-    display: flex;
-    flex-wrap: wrap;
-    height: 70%;
-    width: auto;
-}
-
-.nav {
-    height: 70%;
-}
-
-.banner img {
-    height: 100%;
-    width: auto;
-}
-
-.banner-text {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    flex: auto;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.banner-text-title {
-    margin-bottom: 25px;
-    padding-bottom: 10px;
-    display: flex;
-    font-size: 28px;
-    border-bottom: 2px solid blue;
-}
-
-.banner-text-body {
-    width: 80%;
-    text-align: center;
-    font-size: 22px;
-}
