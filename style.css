@@ -9,14 +9,51 @@ html,body {
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 .header {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background-color: white;
-    padding: 10px;
+
+}
+
+.header-title {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Amita', 'arial';
+    font-size: 32px;
+    color: black;
+}
+
+.first-name,
+.last-name {
+    font-family: 'Amita', 'arial';
+    font-size: 25px;
+    color: black;
+    margin-bottom: -5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.period {
+    color: darkred;
+}
+
+.header-left,
+.header-right {
+    margin: 15px;
+}
+
+.header-left button,
+.header-right button {
+    border-radius: 10px;
+    background-color: indigo;
+    color: white;
 }
 
 .content {
@@ -27,36 +64,39 @@ body {
     padding: 0px;
 }
 
-.content-row-1,
-.content-row-2,
-.content-row-3,
-.content-row-4,
-.content-row-5 {
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about {
+    min-height: 30vh;
     display: flex;
-    border: 2px solid blue;
-    padding: 20px;
-    height: 20%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(172, 17, 17);
+}
+
+.about-header {
+    font-family: 'Beth Ellen', 'arial';
+    margin: 15px;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.about-text {
+    width: 70vw;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    font-family: 'Amita';
+    margin-bottom: 10px;
 }
 
 .footer {
     background-color: white;
     padding: 10px;
-}
-
-.header-left {
-    display: flex;
-    flex: auto;
-    font-family: 'Amita', 'arial';
-    font-size: 32px;
-    color: black;
-    margin-left: 2vh;
-}
-
-.header-right a {
-    margin: 40px;
-}
-
-.period {
-    color: darkred;
 }
 
