@@ -17,7 +17,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: white;
-
 }
 
 .header-title {
@@ -56,14 +55,6 @@ body {
     color: white;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    flex: auto;
-    background-color: #912222;
-    padding: 0px;
-}
-
 .banner img {
     width: 100%;
     height: auto;
@@ -93,6 +84,90 @@ body {
     text-align: center;
     font-family: 'Amita';
     margin-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: fit-content;
+}
+
+.dance,
+.choreo,
+.act,
+.model {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    min-height: fit-content;
+}
+
+.dance {
+    background-color: rgb(238, 87, 112);
+}
+
+.choreo {
+    background-color: rebeccapurple;
+}
+
+.act {
+    background-color: rgb(44, 44, 172);
+}
+
+.model {
+    background-color: rgb(15, 10, 36);
+}
+
+.dance-header,
+.choreo-header,
+.act-header,
+.model-header {
+    margin-left: 10vw;
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    font-family: 'Beth Ellen';
+}
+
+.dance-images,
+.choreo-images,
+.act-images,
+.model-images {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.dance-image-1,
+.dance-image-2,
+.dance-image-3,
+.dance-image-4,
+.choreo-image-1,
+.choreo-image-2,
+.choreo-image-3,
+.choreo-image-4,
+.act-image-1,
+.act-image-2,
+.act-image-3,
+.act-image-4,
+.model-image-1,
+.model-image-2,
+.model-image-3,
+.model-image-4 {
+    width: 25vw;
+    height: 10vh;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
 }
 
 .footer {
