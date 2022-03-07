@@ -3,7 +3,6 @@ html,body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
 }
 
 body {
@@ -13,165 +12,100 @@ body {
 }
 
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-}
-
-.header-title {
-    display: flex;
-    flex: auto;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Amita', 'arial';
-    font-size: 32px;
-    color: black;
-}
-
-.first-name,
-.last-name {
-    font-family: 'Amita', 'arial';
-    font-size: 25px;
-    color: black;
-    margin-bottom: -5px;
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
-.period {
-    color: darkred;
-}
-
-.header-left,
-.header-right {
-    margin: 15px;
-}
-
-.header-left button,
-.header-right button {
-    border-radius: 10px;
-    background-color: indigo;
-    color: white;
-}
-
-.banner img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.about {
-    min-height: 30vh;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: rgb(172, 17, 17);
-}
-
-.about-header {
-    font-family: 'Beth Ellen', 'arial';
-    margin: 15px;
-    border-bottom: 1px solid white;
-    color: white;
-}
-
-.about-text {
-    width: 70vw;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    font-family: 'Amita';
-    margin-bottom: 10px;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: fit-content;
-}
-
-.dance,
-.choreo,
-.act,
-.model {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
     padding: 10px;
-    min-height: fit-content;
+    padding-top: 20px;
+    height: 5vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
-.dance {
-    background-color: rgb(238, 87, 112);
-}
-
-.choreo {
-    background-color: rebeccapurple;
-}
-
-.act {
-    background-color: rgb(44, 44, 172);
-}
-
-.model {
-    background-color: rgb(15, 10, 36);
-}
-
-.dance-header,
-.choreo-header,
-.act-header,
-.model-header {
-    margin-left: 10vw;
-    padding: 10px;
-    font-size: 25px;
-    color: white;
-    font-family: 'Beth Ellen';
-}
-
-.dance-images,
-.choreo-images,
-.act-images,
-.model-images {
-    align-self: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.dance-image-1,
-.dance-image-2,
-.dance-image-3,
-.dance-image-4,
-.choreo-image-1,
-.choreo-image-2,
-.choreo-image-3,
-.choreo-image-4,
-.act-image-1,
-.act-image-2,
-.act-image-3,
-.act-image-4,
-.model-image-1,
-.model-image-2,
-.model-image-3,
-.model-image-4 {
-    width: 25vw;
-    height: 10vh;
-    background-color: white;
-    margin: 20px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.logo {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 4px;
     font-size: 30px;
 }
 
-.footer {
-    background-color: white;
-    padding: 10px;
+.menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    visibility: hidden;
 }
 
+.menu li {
+    font-family: 'Fredoka', sans-serif;
+}
+
+
+.front-image {
+    background-color: tomato;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-image img {
+    height: 95%;
+    width: 95%;
+}
+
+.about {
+    background-color: wheat;
+    min-height: 50vh;
+}
+
+.categories {
+    background-color: aquamarine;
+    min-height: 45vh;
+}
+
+.footer {
+    background-color: blueviolet;
+    min-height: 4vh;
+}
+
+@media only screen and (min-width: 1000px) {
+    .header {
+        flex-direction: row;
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 15vh;
+    }
+
+    .logo {
+        font-size: 52px;
+        flex: 1;
+    }
+
+    .menu {
+        justify-content: flex-end;
+        flex-direction: row;
+        visibility: visible;
+    }
+
+    .menu li {
+        margin-right: 10%;
+        margin-left: 10%;
+        font-size: 22px;
+    }
+
+    .menu li:hover {
+        color: cadetblue;
+    }
+
+    .front-image {
+        min-height: 80vh;
+    }
+
+    .front-image img {
+        height: 700px;
+        width: 1400px;
+    }
+}
